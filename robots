@@ -1,0 +1,7 @@
+# Policastro Soluções em Design — UX & Product Design
+# Todo o site pode ser lido pelos buscadores
+
+User-agent: *
+Allow: /
+
+Sitemap: https://isadorapolicastrouxdesign.com/sitemap.xml
