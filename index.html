@@ -3,459 +3,146 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Estúdio Isadora Policastro — UX & Product Design</title>
-  <meta name="description" content="Estúdio especializado em UX & Product Design. Pesquisa, estratégia e interfaces que geram resultado real para o seu negócio." />
+  <title>Policastro Soluções em Design — UX &amp; Product Design</title>
+  <meta name="description" content="Policastro Soluções em Design: UX &amp; Product Design. Pesquisa, estratégia e interfaces que geram resultado real para o seu negócio." />
+  <meta name="author" content="Policastro Soluções em Design" />
+  <meta name="theme-color" content="#f7f4ee" />
   <link rel="canonical" href="https://isadorapolicastrouxdesign.com/" />
-
   <meta property="og:type" content="website" />
-  <meta property="og:title" content="Estúdio Isadora Policastro — UX & Product Design" />
-  <meta property="og:description" content="Unimos estratégia, pesquisa e design para criar experiências digitais que encantam usuários e impulsionam negócios." />
+  <meta property="og:site_name" content="Policastro Soluções em Design" />
+  <meta property="og:locale" content="pt_BR" />
+  <meta property="og:title" content="Policastro Soluções em Design — UX &amp; Product Design" />
+  <meta property="og:description" content="Policastro Soluções em Design: UX &amp; Product Design. Pesquisa, estratégia e interfaces que geram resultado real para o seu negócio." />
   <meta property="og:url" content="https://isadorapolicastrouxdesign.com/" />
   <meta property="og:image" content="https://isadorapolicastrouxdesign.com/assets/isadora-policastro.jpg" />
   <meta name="twitter:card" content="summary_large_image" />
-  <meta name="twitter:title" content="Estúdio Isadora Policastro — UX & Product Design" />
-  <meta name="twitter:description" content="Unimos estratégia, pesquisa e design para criar experiências digitais que encantam usuários e impulsionam negócios." />
-
+  <meta name="twitter:title" content="Policastro Soluções em Design — UX &amp; Product Design" />
+  <meta name="twitter:description" content="Policastro Soluções em Design: UX &amp; Product Design. Pesquisa, estratégia e interfaces que geram resultado real para o seu negócio." />
+  <meta name="twitter:image" content="https://isadorapolicastrouxdesign.com/assets/isadora-policastro.jpg" />
+  <link rel="icon" href="favicon.ico" sizes="any" />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;900&display=swap" rel="stylesheet" />
-
-  <script type="application/ld+json">
-  {
-    "@context": "https://schema.org",
-    "@graph": [
-      {
-        "@type": "Organization",
-        "@id": "https://isadorapolicastrouxdesign.com/#organization",
-        "name": "Estúdio Isadora Policastro",
-        "url": "https://isadorapolicastrouxdesign.com/",
-        "description": "Estúdio de UX & Product Design especializado em pesquisa, estratégia e interfaces que geram resultados reais.",
-        "sameAs": [
-          "https://www.linkedin.com/in/isadorapolicastro/",
-          "https://www.behance.net/isapolicastro",
-          "https://www.instagram.com/isadora.policastro/"
-        ]
-      },
-      {
-        "@type": "WebSite",
-        "@id": "https://isadorapolicastrouxdesign.com/#website",
-        "name": "Estúdio Isadora Policastro",
-        "url": "https://isadorapolicastrouxdesign.com/",
-        "publisher": { "@id": "https://isadorapolicastrouxdesign.com/#organization" }
-      },
-      {
-        "@type": "ProfessionalService",
-        "name": "Estúdio Isadora Policastro",
-        "url": "https://isadorapolicastrouxdesign.com/",
-        "image": "https://isadorapolicastrouxdesign.com/assets/isadora-policastro.jpg",
-        "areaServed": { "@type": "Country", "name": "Brasil" },
-        "telephone": "+55-51-99903-1231",
-        "email": "isapolicastro.designer@gmail.com",
-        "address": {
-          "@type": "PostalAddress",
-          "addressLocality": "Porto Alegre",
-          "addressRegion": "RS",
-          "addressCountry": "BR"
-        }
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;900&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="assets/site.css" />
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "Organization",
+      "@id": "https://isadorapolicastrouxdesign.com/#organization",
+      "name": "Policastro Soluções em Design",
+      "url": "https://isadorapolicastrouxdesign.com/",
+      "logo": "https://isadorapolicastrouxdesign.com/favicon.ico",
+      "description": "Soluções em UX & Product Design com foco em pesquisa, estratégia e interfaces que geram resultados reais.",
+      "sameAs": [
+        "https://www.linkedin.com/in/isadorapolicastro/",
+        "https://www.behance.net/isapolicastro",
+        "https://www.instagram.com/isadora.policastro/"
+      ]
+    },
+    {
+      "@type": "WebSite",
+      "@id": "https://isadorapolicastrouxdesign.com/#website",
+      "name": "Policastro Soluções em Design",
+      "url": "https://isadorapolicastrouxdesign.com/",
+      "inLanguage": [
+        "pt-BR",
+        "en"
+      ],
+      "publisher": {
+        "@id": "https://isadorapolicastrouxdesign.com/#organization"
       }
-    ]
-  }
-  </script>
-
-  <style>
-    /* ===== Variáveis (equivalentes aos tokens do Lovable/shadcn) ===== */
-    :root {
-      --background: #ffffff;
-      --foreground: #0a0a0a;
-      --muted-foreground: #737373;
-      --border: #e5e5e5;
-      --secondary: #f5f5f5;
-      --font: "Inter", system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
-      --mono: ui-monospace, SFMono-Regular, Menlo, Consolas, monospace;
+    },
+    {
+      "@type": "ProfessionalService",
+      "name": "Policastro Soluções em Design",
+      "url": "https://isadorapolicastrouxdesign.com/",
+      "image": "https://isadorapolicastrouxdesign.com/assets/isadora-policastro.jpg",
+      "areaServed": {
+        "@type": "Country",
+        "name": "Brasil"
+      },
+      "telephone": "+55-51-99903-1231",
+      "email": "isapolicastro.designer@gmail.com",
+      "address": {
+        "@type": "PostalAddress",
+        "addressLocality": "Porto Alegre",
+        "addressRegion": "RS",
+        "addressCountry": "BR"
+      }
     }
-
-    *, *::before, *::after { box-sizing: border-box; }
-    html { scroll-behavior: smooth; }
-    body {
-      margin: 0;
-      font-family: var(--font);
-      color: var(--foreground);
-      background: var(--background);
-      -webkit-font-smoothing: antialiased;
-      line-height: 1.5;
-    }
-    img { display: block; max-width: 100%; }
-    a { color: inherit; text-decoration: none; }
-    h1, h2, p, ul { margin: 0; }
-    ul { padding: 0; list-style: none; }
-
-    .eyebrow {
-      font-size: 12px;
-      line-height: 16px;
-      font-weight: 600;
-      letter-spacing: 0.25em;
-      text-transform: uppercase;
-      color: var(--muted-foreground);
-    }
-
-    /* ===== Barra de navegação (provisória) ===== */
-    .nav {
-      position: sticky;
-      top: 0;
-      z-index: 10;
-      display: flex;
-      align-items: center;
-      justify-content: space-between;
-      gap: 16px;
-      padding: 16px 24px;
-      background: rgba(255, 255, 255, 0.8);
-      backdrop-filter: blur(8px);
-      -webkit-backdrop-filter: blur(8px);
-      border-bottom: 1px solid var(--border);
-    }
-    .nav__brand { font-weight: 600; font-size: 15px; letter-spacing: -0.01em; }
-    .nav__links { display: flex; align-items: center; gap: 20px; font-size: 14px; }
-    .nav__links a { color: var(--muted-foreground); transition: color .2s; }
-    .nav__links a:hover { color: var(--foreground); }
-    .lang-toggle {
-      font: inherit;
-      font-size: 12px;
-      font-weight: 600;
-      letter-spacing: 0.1em;
-      padding: 6px 12px;
-      border-radius: 999px;
-      border: 1px solid var(--border);
-      background: var(--background);
-      color: var(--foreground);
-      cursor: pointer;
-      transition: background .2s, color .2s;
-    }
-    .lang-toggle:hover { background: var(--foreground); color: var(--background); }
-
-    /* ===== Hero ===== */
-    .hero {
-      position: relative;
-      overflow: hidden;
-      padding: 80px 24px;
-    }
-    .hero__inner {
-      max-width: 72rem;
-      margin: 0 auto;
-      text-align: center;
-    }
-    .hero .eyebrow { margin-bottom: 24px; }
-    .hero__title {
-      font-size: 48px;
-      line-height: 1;
-      font-weight: 500;
-      letter-spacing: -0.025em;
-    }
-    .hero__lead {
-      margin: 24px auto 0;
-      max-width: 42rem;
-      font-size: 18px;
-      line-height: 28px;
-      color: var(--muted-foreground);
-    }
-    .hero__stage {
-      position: relative;
-      margin: 48px 0;
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      justify-content: center;
-      gap: 24px;
-    }
-    .hero__bgword {
-      pointer-events: none;
-      position: absolute;
-      left: 0;
-      right: 0;
-      top: 40%;
-      transform: translateY(-50%);
-      overflow: hidden;
-    }
-    .hero__bgword p {
-      white-space: nowrap;
-      font-size: 18vw;
-      line-height: 1;
-      font-weight: 900;
-      letter-spacing: -0.05em;
-      color: rgba(10, 10, 10, 0.05);
-      user-select: none;
-    }
-    .hero__photo {
-      position: relative;
-      width: 256px;
-      height: 256px;
-      border-radius: 2rem;
-      object-fit: cover;
-      box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.25);
-    }
-    .btn-ghost {
-      position: relative;
-      display: inline-flex;
-      align-items: center;
-      padding: 10px 24px;
-      border-radius: 999px;
-      border: 1px solid var(--border);
-      background: rgba(255, 255, 255, 0.8);
-      backdrop-filter: blur(8px);
-      -webkit-backdrop-filter: blur(8px);
-      font-size: 14px;
-      font-weight: 500;
-      transition: background .2s, color .2s;
-    }
-    .btn-primary {
-      display: inline-block;
-      padding: 16px 40px;
-      border-radius: 999px;
-      border: 1px solid var(--border);
-      background: var(--secondary);
-      font-size: 16px;
-      font-weight: 500;
-      transition: background .2s, color .2s;
-    }
-    .btn-ghost:hover, .btn-primary:hover {
-      background: var(--foreground);
-      color: var(--background);
-    }
-    .hero__scroll {
-      margin-top: 48px;
-      font-size: 12px;
-      letter-spacing: 0.3em;
-      text-transform: uppercase;
-      color: var(--muted-foreground);
-    }
-
-    /* ===== Sobre ===== */
-    .about { padding: 80px 24px; }
-    .about__inner { max-width: 64rem; margin: 0 auto; }
-    .about__grid { display: grid; gap: 48px; align-items: start; }
-    .about__title {
-      margin-top: 12px;
-      font-size: 30px;
-      line-height: 1.1;
-      font-weight: 500;
-      letter-spacing: -0.025em;
-    }
-    .about__bio { margin-top: 24px; color: var(--muted-foreground); line-height: 1.625; }
-    .about__bio p + p { margin-top: 16px; }
-    .about__cta { margin-top: 32px; }
-    .link-arrow {
-      display: inline-flex;
-      align-items: center;
-      gap: 8px;
-      font-size: 14px;
-      font-weight: 500;
-      text-decoration: underline;
-      text-underline-offset: 4px;
-      transition: color .2s;
-    }
-    .link-arrow:hover { color: var(--muted-foreground); }
-    .about__photo {
-      width: 100%;
-      height: 288px;
-      border-radius: 1rem;
-      object-fit: cover;
-      box-shadow: 0 20px 25px -5px rgba(0,0,0,.1), 0 8px 10px -6px rgba(0,0,0,.1);
-    }
-    .edu { margin-top: 32px; }
-    .edu ul { margin-top: 16px; }
-    .edu li { display: flex; align-items: baseline; gap: 16px; }
-    .edu li + li { margin-top: 12px; }
-    .edu__year {
-      width: 48px;
-      flex-shrink: 0;
-      font-family: var(--mono);
-      font-size: 14px;
-      font-variant-numeric: tabular-nums;
-      color: var(--muted-foreground);
-    }
-    .edu__title { font-weight: 500; }
-    .edu__school { font-size: 14px; color: var(--muted-foreground); }
-
-    /* ===== Telas médias em diante (equivalente ao md: do Tailwind) ===== */
-    @media (min-width: 768px) {
-      .hero { padding: 112px 24px; }
-      .hero__title { font-size: 96px; }
-      .hero__photo { width: 320px; height: 320px; }
-      .about { padding: 112px 24px; }
-      .about__grid { grid-template-columns: 1fr 1fr; gap: 64px; }
-      .about__title { font-size: 36px; }
-      .about__photo { height: 24rem; }
-    }
-
-    @media (prefers-reduced-motion: reduce) {
-      html { scroll-behavior: auto; }
-      * { transition: none !important; }
-    }
-  </style>
+  ]
+}
+</script>
 </head>
-<body>
+<body data-page="home">
+  <a class="skip-link" href="#conteudo">Pular para o conteúdo</a>
 
-  <!-- Barra de navegação provisória: troque pelo layout do seu __root.tsx -->
-  <nav class="nav" aria-label="Principal">
-    <a class="nav__brand" href="./">Estúdio Policastro</a>
-    <div class="nav__links">
-      <a href="sobre/" data-i18n="navAbout">Sobre</a>
-      <a href="contato/" data-i18n="navContact">Contato</a>
-      <button class="lang-toggle" type="button" id="langToggle" aria-label="Mudar idioma">EN</button>
+  <header class="nav" data-open="false">
+    <div class="nav__bar">
+      <a class="nav__brand" href="./" aria-label="Policastro Soluções em Design — início">policastro<span class="muted">.design</span></a>
+      <nav aria-label="Principal">
+        <ul class="nav__links">
+          <li><a href="estudio/" data-i18n="nav.estudio">Sobre nós</a></li><li><a href="servicos/" data-i18n="nav.servicos">Serviços</a></li><li><a href="processo/" data-i18n="nav.processo">Processo</a></li><li><a href="projetos/" data-i18n="nav.projetos">Projetos</a></li><li><a href="trabalhe-conosco/" data-i18n="nav.trabalhe-conosco">Trabalhe Conosco</a></li><li><a href="sobre/" data-i18n="nav.sobre">Quem sou eu</a></li><li><a href="contato/" data-i18n="nav.contato">Contato</a></li>
+        </ul>
+      </nav>
+      <div class="nav__actions">
+        <button class="icon-btn" type="button" id="langToggle" aria-label="Switch to English" title="Switch to English">EN</button>
+        <a class="btn btn--dark nav__cta" href="contato/" data-i18n="navCta">Vamos conversar</a>
+        <button class="icon-btn nav__toggle" type="button" id="menuToggle" aria-expanded="false" aria-controls="menuPanel" aria-label="Menu" data-i18n-aria="menu">
+          <svg class="bar-open" width="18" height="18" viewBox="0 0 18 18" aria-hidden="true"><path d="M3 5h12M3 9h12M3 13h12" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg>
+          <svg class="bar-close" width="18" height="18" viewBox="0 0 18 18" aria-hidden="true"><path d="M4.5 4.5l9 9M13.5 4.5l-9 9" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg>
+        </button>
+      </div>
     </div>
-  </nav>
+    <nav class="nav__panel" id="menuPanel" aria-label="Menu">
+      <a href="estudio/" data-i18n="nav.estudio">Sobre nós</a><a href="servicos/" data-i18n="nav.servicos">Serviços</a><a href="processo/" data-i18n="nav.processo">Processo</a><a href="projetos/" data-i18n="nav.projetos">Projetos</a><a href="trabalhe-conosco/" data-i18n="nav.trabalhe-conosco">Trabalhe Conosco</a><a href="sobre/" data-i18n="nav.sobre">Quem sou eu</a><a href="contato/" data-i18n="nav.contato">Contato</a>
+    </nav>
+  </header>
 
-  <main>
-    <section id="home" class="hero">
-      <div class="hero__inner">
-        <p class="eyebrow" data-i18n="heroEyebrow">UX & Product Design</p>
-        <h1 class="hero__title" data-i18n="heroTitle">Estúdio Isadora Policastro</h1>
+  <main id="conteudo">
+    <section class="hero">
+      <div class="container">
+        <p class="eyebrow" data-i18n="heroEyebrow">UX &amp; Product Design · Porto Alegre, BR</p>
+        <h1 class="hero__title" data-i18n="heroTitle">Policastro Soluções em Design</h1>
         <p class="hero__lead" data-i18n="heroLead">Unimos estratégia, pesquisa e design para criar experiências digitais que encantam usuários e impulsionam negócios.</p>
-
         <div class="hero__stage">
-          <div class="hero__bgword" aria-hidden="true">
-            <p>ESTÚDIO · POLICASTRO</p>
-          </div>
+          <div class="hero__bgword" aria-hidden="true"><span>POLICASTRO</span></div>
           <img class="hero__photo" src="assets/isadora-policastro.jpg" alt="Isadora Policastro" width="320" height="320" fetchpriority="high" />
-          <a class="btn-ghost" href="sobre/" data-i18n="whoBtn">Quem é Isadora</a>
+          <a class="btn btn--ghost" href="sobre/" data-i18n="whoBtn">Quem é Isadora Policastro</a>
         </div>
-
-        <a class="btn-primary" href="contato/" data-i18n="hireCta">Quero contratar o estúdio</a>
-
-        <p class="hero__scroll" data-i18n="scrollHint">Role para conhecer</p>
+        <a class="btn btn--soft" href="contato/" data-i18n="hireCta">Quero contratar</a>
+        <p class="hero__hint" data-i18n="scrollHint">✦ Explore o site e conheça nosso trabalho ✦</p>
       </div>
     </section>
 
-    <section id="sobre" class="about">
-      <div class="about__inner">
+    <section class="about" aria-labelledby="sobre-titulo">
+      <div class="container container--md">
         <div class="about__grid">
           <div>
-            <p class="eyebrow" data-i18n="aboutEyebrow">Sobre</p>
-            <h2 class="about__title" data-i18n="aboutTitle">Quem é Isadora Policastro</h2>
-            <div class="about__bio" id="aboutBio"></div>
-            <div class="about__cta">
-              <a class="link-arrow" href="sobre/">
-                <span data-i18n="aboutCta">Conheça minha trajetória completa</span>
-                <svg width="16" height="16" viewBox="0 0 16 16" fill="none" aria-hidden="true">
-                  <path d="M6 12L10 8L6 4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
-                </svg>
-              </a>
-            </div>
+            <p class="eyebrow" data-i18n="home.aboutEyebrow">Sobre</p>
+            <h2 class="about__title" data-i18n="home.aboutTitle" id="sobre-titulo">Quem é Isadora Policastro</h2>
+            <div class="about__bio"><p data-i18n="home.aboutBio.0">Sou product designer com mais de 10 anos de experiência criando interfaces digitais — 3 deles em cargos de liderança. Já levei produtos do zero ao lançamento e atuei em todas as etapas, do conceito em baixa fidelidade até interfaces prontas para produção.</p><p data-i18n="home.aboutBio.1">Tenho perfil de startup: gosto de ambiguidade, ando rápido e amo construir produtos. Trabalho com mentalidade orientada a dados, analiso comportamento de usuário e busco feedback direto dos clientes para informar cada decisão de design.</p></div>
+            <a class="link-arrow link-u" href="sobre/"><span data-i18n="home.aboutCta">Conheça minha trajetória completa</span><svg width="16" height="16" viewBox="0 0 16 16" fill="none" aria-hidden="true"><path d="M6 12L10 8L6 4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg></a>
             <div class="edu">
-              <p class="eyebrow" data-i18n="eduTitle">Formação</p>
-              <ul id="eduList"></ul>
+              <p class="eyebrow" data-i18n="home.eduTitle">Formação</p>
+              <ul><li><span class="edu__year" data-i18n="home.edu.0.year">2024</span><div><p class="edu__title" data-i18n="home.edu.0.title">Pós-graduação em UX Design</p><p class="edu__school" data-i18n="home.edu.0.school">PUCRS</p></div></li><li><span class="edu__year" data-i18n="home.edu.1.year">2020</span><div><p class="edu__title" data-i18n="home.edu.1.title">Bacharel em Design de Produto</p><p class="edu__school" data-i18n="home.edu.1.school">UFRGS</p></div></li><li><span class="edu__year" data-i18n="home.edu.2.year">2019</span><div><p class="edu__title" data-i18n="home.edu.2.title">Apple Developer Academy — iOS Foundations</p><p class="edu__school" data-i18n="home.edu.2.school">Apple Developer Academy</p></div></li></ul>
             </div>
           </div>
-
           <img class="about__photo" src="assets/isadora-policastro.jpg" alt="Isadora Policastro" loading="lazy" />
         </div>
       </div>
     </section>
   </main>
 
-  <script>
-    var COPY = {
-      pt: {
-        navAbout: "Sobre",
-        navContact: "Contato",
-        heroEyebrow: "UX & Product Design",
-        heroTitle: "Estúdio Isadora Policastro",
-        heroLead: "Unimos estratégia, pesquisa e design para criar experiências digitais que encantam usuários e impulsionam negócios.",
-        whoBtn: "Quem é Isadora",
-        hireCta: "Quero contratar o estúdio",
-        scrollHint: "Role para conhecer",
-        aboutEyebrow: "Sobre",
-        aboutTitle: "Quem é Isadora Policastro",
-        aboutBio: [
-          "Sou product designer com mais de 10 anos de experiência criando interfaces digitais — 3 deles em cargos de liderança. Já levei produtos do zero ao lançamento e atuei em todas as etapas, do conceito em baixa fidelidade até interfaces prontas para produção.",
-          "Tenho perfil de startup: gosto de ambiguidade, ando rápido e amo construir produtos. Trabalho com mentalidade orientada a dados, analiso comportamento de usuário e busco feedback direto dos clientes para informar cada decisão de design."
-        ],
-        aboutCta: "Conheça minha trajetória completa",
-        eduTitle: "Formação",
-        aboutEdu: [
-          { year: "2024", title: "Pós-graduação em UX Design", school: "PUCRS" },
-          { year: "2020", title: "Bacharel em Design de Produto", school: "UFRGS" },
-          { year: "2019", title: "Apple Developer Academy — iOS Foundations", school: "Apple Developer Academy" }
-        ],
-        toggleLabel: "EN",
-        toggleAria: "Switch to English"
-      },
-      en: {
-        navAbout: "About",
-        navContact: "Contact",
-        heroEyebrow: "UX & Product Design",
-        heroTitle: "Isadora Policastro Studio",
-        heroLead: "We combine strategy, research and design to create digital experiences that delight users and drive business.",
-        whoBtn: "Who is Isadora",
-        hireCta: "Hire the studio",
-        scrollHint: "Scroll to explore",
-        aboutEyebrow: "About",
-        aboutTitle: "Who is Isadora Policastro",
-        aboutBio: [
-          "A product designer with 10+ years of experience crafting digital interfaces — 3 of them in leadership roles. I've taken products from zero to one and worked across every stage, from low-fidelity concept to production-ready interfaces.",
-          "I have startup DNA: I thrive in ambiguity, move fast, and love building from 0 to 1. I work with a data-informed mindset, analyze user behavior and gather feedback directly from customers to inform every design decision."
-        ],
-        aboutCta: "See my full journey",
-        eduTitle: "Education",
-        aboutEdu: [
-          { year: "2024", title: "Postgraduate in UX Design", school: "PUCRS" },
-          { year: "2020", title: "BA in Product Design", school: "UFRGS" },
-          { year: "2019", title: "Apple Developer Academy — iOS Foundations", school: "Apple Developer Academy" }
-        ],
-        toggleLabel: "PT",
-        toggleAria: "Mudar para português"
-      }
-    };
+  <footer class="footer">
+    <div class="container container--wide footer__inner">
+      <span data-i18n="footer1">© 2026 Policastro Soluções em Design · UX &amp; Product Design</span>
+      <span data-i18n="footer2">Feito com cuidado em Porto Alegre, BR</span>
+    </div>
+  </footer>
 
-    function getSavedLang() {
-      try { return localStorage.getItem("lang") === "en" ? "en" : "pt"; }
-      catch (e) { return "pt"; }
-    }
-    function saveLang(lang) {
-      try { localStorage.setItem("lang", lang); } catch (e) {}
-    }
-
-    function render(lang) {
-      var c = COPY[lang];
-      document.documentElement.lang = lang === "pt" ? "pt-BR" : "en";
-
-      document.querySelectorAll("[data-i18n]").forEach(function (el) {
-        var key = el.getAttribute("data-i18n");
-        if (typeof c[key] === "string") el.textContent = c[key];
-      });
-
-      var bio = document.getElementById("aboutBio");
-      bio.innerHTML = "";
-      c.aboutBio.forEach(function (text) {
-        var p = document.createElement("p");
-        p.textContent = text;
-        bio.appendChild(p);
-      });
-
-      var list = document.getElementById("eduList");
-      list.innerHTML = "";
-      c.aboutEdu.forEach(function (e) {
-        var li = document.createElement("li");
-        li.innerHTML =
-          '<span class="edu__year"></span><div><p class="edu__title"></p><p class="edu__school"></p></div>';
-        li.querySelector(".edu__year").textContent = e.year;
-        li.querySelector(".edu__title").textContent = e.title;
-        li.querySelector(".edu__school").textContent = e.school;
-        list.appendChild(li);
-      });
-
-      var btn = document.getElementById("langToggle");
-      btn.textContent = c.toggleLabel;
-      btn.setAttribute("aria-label", c.toggleAria);
-    }
-
-    var current = getSavedLang();
-    render(current);
-
-    document.getElementById("langToggle").addEventListener("click", function () {
-      current = current === "pt" ? "en" : "pt";
-      saveLang(current);
-      render(current);
-    });
-  </script>
+  <script src="assets/site.js"></script>
 </body>
 </html>
