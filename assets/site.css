@@ -197,8 +197,8 @@ button, input, select, textarea { font: inherit; color: inherit; }
   transition: transform .3s;
 }
 .project:hover { transform: translateY(-4px); }
-.project__media { display: flex; align-items: center; justify-content: center; aspect-ratio: 4 / 3; overflow: hidden; padding: 40px; }
-.project__media img { max-width: 100%; max-height: 100%; object-fit: contain; transition: transform .7s; }
+.project__media { aspect-ratio: 4 / 3; overflow: hidden; }
+.project__media img { width: 100%; height: 100%; object-fit: cover; transition: transform .7s; }
 .project:hover .project__media img { transform: scale(1.05); }
 .project__info { display: flex; align-items: flex-end; justify-content: space-between; gap: 16px; padding: 28px; }
 .project__sub { font-size: 12px; font-weight: 500; opacity: .7; }
@@ -212,7 +212,7 @@ button, input, select, textarea { font: inherit; color: inherit; }
 .testimonial .eyebrow { margin-bottom: 40px; }
 .testimonial blockquote { font-size: 24px; line-height: 1.625; font-weight: 500; letter-spacing: -0.025em; }
 .testimonial__author { margin-top: 40px; display: flex; align-items: center; justify-content: center; gap: 16px; text-align: left; }
-.testimonial__author img { width: 56px; height: 56px; border-radius: 999px; object-fit: cover; }
+.testimonial__author img { width: 56px; height: 56px; border-radius: 999px; object-fit: contain; background: #fff; border: 1px solid var(--border); padding: 6px; }
 .testimonial__name { font-weight: 600; }
 
 /* ---------- Trabalhe conosco ---------- */
@@ -236,7 +236,7 @@ button, input, select, textarea { font: inherit; color: inherit; }
 /* ---------- Quem sou eu ---------- */
 .me { padding: 64px 0; }
 .me h1 { margin-top: 16px; font-size: 36px; line-height: 1.05; font-weight: 500; letter-spacing: -0.025em; }
-.me__photo { margin-top: 40px; width: 256px; height: 256px; border-radius: 2rem; object-fit: cover; box-shadow: 0 25px 50px -12px rgba(0,0,0,.25); }
+.me__photo { margin-top: 40px; width: 256px; height: 256px; border-radius: 2rem; object-fit: cover; object-position: center 20%; box-shadow: 0 25px 50px -12px rgba(0,0,0,.25); }
 .me__bio { margin-top: 48px; font-size: 16px; line-height: 1.625; color: var(--muted-foreground); }
 .me__bio p + p { margin-top: 20px; }
 .me section { margin-top: 64px; }
