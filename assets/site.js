@@ -162,6 +162,10 @@
     ],
     "projects": [
       {
+        "title": "Redesign do site Fourbank",
+        "subtitle": "Web Design · Conceito"
+      },
+      {
         "title": "App Telemedicina",
         "subtitle": "Processo de descoberta"
       },
@@ -408,6 +412,10 @@
       }
     ],
     "projects": [
+      {
+        "title": "Fourbank website redesign",
+        "subtitle": "Web Design · Concept"
+      },
       {
         "title": "Telemedicine App",
         "subtitle": "Discovery process"

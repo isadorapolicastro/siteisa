@@ -208,6 +208,8 @@ button, input, select, textarea { font: inherit; color: inherit; }
   border: 1px solid rgba(255,255,255,.3); font-size: 18px; transition: background .2s, color .2s;
 }
 .project:hover .project__arrow { background: #fff; color: var(--foreground); }
+.project--featured .project__media { aspect-ratio: 16 / 9; }
+.project--featured .project__media img { object-position: top; }
 .testimonial { border-top: 1px solid var(--border); padding: 96px 0; text-align: center; }
 .testimonial .eyebrow { margin-bottom: 40px; }
 .testimonial blockquote { font-size: 24px; line-height: 1.625; font-weight: 500; letter-spacing: -0.025em; }
@@ -306,6 +308,9 @@ textarea.field { border-radius: 1.5rem; resize: vertical; min-height: 120px; }
   .steps, .stats__grid, .jobs { grid-template-columns: repeat(3, 1fr); }
   .stats__value { font-size: 72px; }
   .projects { grid-template-columns: 1fr 1fr; }
+  .project--featured { grid-column: 1 / -1; }
+  .project--featured .project__media { aspect-ratio: 21 / 9; }
+  .project--featured .project__title { font-size: 30px; line-height: 38px; }
   .testimonial blockquote { font-size: 36px; line-height: 1.4; }
   .skills__name { font-size: 24px; }
   .me h1 { font-size: 60px; }
