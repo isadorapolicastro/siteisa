@@ -21,6 +21,16 @@
     },
     "navCta": "Vamos conversar",
     "menu": "Menu",
+    "conceptsEyebrow": "Estudos e conceitos",
+    "conceptsLead": "Projetos autorais para explorar identidade visual, aplicativos e sites em segmentos diferentes.",
+    "concepts": [
+      { "subtitle": "Identidade visual · Conceito" },
+      { "subtitle": "Aplicativo · Conceito" },
+      { "subtitle": "Site · Conceito" }
+    ],
+    "marqueeLabel": "Serviços",
+    "marqueeText": "Serviços: UX & Product Design, sites, identidade visual, aplicativos, pesquisa com usuários e testes de usabilidade.",
+    "marquee": ["UX & Product Design", "Sites", "Identidade visual", "Aplicativos", "Pesquisa com usuários", "Testes de usabilidade"],
     "langLabel": "EN",
     "langAria": "Switch to English",
     "titles": {
@@ -32,7 +42,10 @@
       "trabalhe-conosco": "Trabalhe Conosco — Policastro Soluções em Design",
       "sobre": "Quem sou eu — Isadora Policastro",
       "contato": "Contato — Policastro Soluções em Design",
-      "404": "Página não encontrada — Policastro Soluções em Design"
+      "404": "Página não encontrada — Policastro Soluções em Design",
+      "case-pausa-torra": "Pausa Torra · Identidade visual — Policastro Soluções em Design",
+      "case-patinha": "Patinha · Aplicativo — Policastro Soluções em Design",
+      "case-essenza": "Essenza Clinic · Site — Policastro Soluções em Design"
     },
     "heroEyebrow": "UX & Product Design · Porto Alegre, BR",
     "heroTitle": "Policastro Soluções em Design",
@@ -272,6 +285,16 @@
     },
     "navCta": "Let's talk",
     "menu": "Menu",
+    "conceptsEyebrow": "Studies and concepts",
+    "conceptsLead": "Self-initiated projects exploring visual identity, apps and websites across different industries.",
+    "concepts": [
+      { "subtitle": "Visual identity · Concept" },
+      { "subtitle": "App · Concept" },
+      { "subtitle": "Website · Concept" }
+    ],
+    "marqueeLabel": "Services",
+    "marqueeText": "Services: UX & Product Design, websites, visual identity, apps, user research and usability testing.",
+    "marquee": ["UX & Product Design", "Websites", "Visual identity", "Apps", "User research", "Usability testing"],
     "langLabel": "PT",
     "langAria": "Mudar para português",
     "titles": {
@@ -283,7 +306,10 @@
       "trabalhe-conosco": "Careers — Policastro Soluções em Design",
       "sobre": "About me — Isadora Policastro",
       "contato": "Contact — Policastro Soluções em Design",
-      "404": "Page not found — Policastro Soluções em Design"
+      "404": "Page not found — Policastro Soluções em Design",
+      "case-pausa-torra": "Pausa Torra · Visual identity — Policastro Soluções em Design",
+      "case-patinha": "Patinha · App — Policastro Soluções em Design",
+      "case-essenza": "Essenza Clinic · Website — Policastro Soluções em Design"
     },
     "heroEyebrow": "UX & Product Design · Porto Alegre, BR",
     "heroTitle": "Policastro Soluções em Design",
@@ -619,6 +645,37 @@
         "&body=" + encodeURIComponent(body);
       var sent = document.getElementById("formSent");
       if (sent) sent.hidden = false;
+    });
+  }
+  // Animações: revelar ao rolar e inclinação dos cards de projeto
+  var reduceMotion = window.matchMedia && window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+  if (!reduceMotion && "IntersectionObserver" in window) {
+    var revealEls = document.querySelectorAll(".project, .step, .services > div, .split, .case-block");
+    var vh = window.innerHeight;
+    var io = new IntersectionObserver(function (entries) {
+      entries.forEach(function (en) {
+        if (en.isIntersecting) { en.target.classList.add("is-in"); io.unobserve(en.target); }
+      });
+    }, { rootMargin: "0px 0px -8% 0px" });
+    revealEls.forEach(function (el) {
+      // só anima o que começa fora da tela; o que já está visível fica parado
+      if (el.getBoundingClientRect().top > vh * 0.9) { el.classList.add("reveal"); io.observe(el); }
+    });
+    document.documentElement.classList.add("js-reveal");
+  }
+  if (!reduceMotion && window.matchMedia && window.matchMedia("(hover: hover)").matches) {
+    document.querySelectorAll(".project").forEach(function (card) {
+      card.addEventListener("pointermove", function (e) {
+        var r = card.getBoundingClientRect();
+        var x = (e.clientX - r.left) / r.width - 0.5;
+        var y = (e.clientY - r.top) / r.height - 0.5;
+        card.style.setProperty("--ry", (x * 5).toFixed(2) + "deg");
+        card.style.setProperty("--rx", (-y * 5).toFixed(2) + "deg");
+      });
+      card.addEventListener("pointerleave", function () {
+        card.style.setProperty("--ry", "0deg");
+        card.style.setProperty("--rx", "0deg");
+      });
     });
   }
 })();

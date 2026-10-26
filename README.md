@@ -28,6 +28,9 @@ gratuitamente no GitHub Pages.
 ├── servicos/index.html         → Serviços
 ├── processo/index.html         → Processo
 ├── projetos/index.html         → Projetos
+│   ├── pausa-torra/            → Case conceitual: identidade visual
+│   ├── patinha/                → Case conceitual: aplicativo
+│   └── essenza-clinic/         → Case conceitual: site
 ├── trabalhe-conosco/index.html → Trabalhe Conosco
 ├── sobre/index.html            → Quem sou eu
 ├── contato/index.html          → Contato
