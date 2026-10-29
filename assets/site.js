@@ -603,6 +603,8 @@
       lang = lang === "pt" ? "en" : "pt";
       saveLang(lang);
       apply();
+      // Avisa outros componentes (ex.: carrossel de projetos) sobre a troca de idioma
+      document.dispatchEvent(new CustomEvent("site:lang", { detail: { lang: lang } }));
     });
   }
 

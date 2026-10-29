@@ -38,6 +38,8 @@ gratuitamente no GitHub Pages.
 ├── assets/
 │   ├── site.css                → cores, fontes e layout de todas as páginas
 │   ├── site.js                 → textos PT/EN, menu do celular e formulário
+│   ├── carrossel.css / .js     → carrossel da página Projetos
+│   ├── projetos-dados.js       → lista de projetos do carrossel
 │   └── isadora-policastro.jpg
 ├── favicon.ico
 ├── robots.txt · sitemap.xml · llms.txt
@@ -75,6 +77,17 @@ O domínio é registrado e renovado no Wix; a hospedagem é feita pelo GitHub Pa
 | CNAME | www  | isadorapolicastro.github.io  |
 
 > ⚠️ Não apague o arquivo `CNAME` e mantenha a renovação automática do domínio ativada no Wix.
+
+## Carrossel de projetos (página Projetos)
+
+Os projetos do carrossel ficam em `assets/projetos-dados.js`, numa lista simples.
+- **Adicionar:** copie um bloco `{ ... }`, cole na posição desejada e troque os textos, a imagem e o link.
+- **Remover:** apague o bloco inteiro.
+- **Reordenar:** mude os blocos de lugar (o primeiro aparece em destaque).
+- **Imagens:** coloque a capa em `assets/projetos/` e informe largura e altura reais.
+- Campos opcionais (descrição, empresa, ano, métricas) só aparecem quando preenchidos.
+
+O comportamento fica em `assets/carrossel.js` e o visual em `assets/carrossel.css`.
 
 ## Ao criar uma página nova
 
