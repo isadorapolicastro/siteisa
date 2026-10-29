@@ -45,7 +45,8 @@
       "404": "Página não encontrada — Policastro Soluções em Design",
       "case-pausa-torra": "Pausa Torra · Identidade visual — Policastro Soluções em Design",
       "case-patinha": "Patinha · Aplicativo — Policastro Soluções em Design",
-      "case-essenza": "Essenza Clinic · Site — Policastro Soluções em Design"
+      "case-essenza": "Essenza Clinic · Site — Policastro Soluções em Design",
+      "case-kashi": "Kashi · Identidade visual — Policastro Soluções em Design"
     },
     "heroEyebrow": "UX & Product Design · Porto Alegre, BR",
     "heroTitle": "Policastro Soluções em Design",
@@ -309,7 +310,8 @@
       "404": "Page not found — Policastro Soluções em Design",
       "case-pausa-torra": "Pausa Torra · Visual identity — Policastro Soluções em Design",
       "case-patinha": "Patinha · App — Policastro Soluções em Design",
-      "case-essenza": "Essenza Clinic · Website — Policastro Soluções em Design"
+      "case-essenza": "Essenza Clinic · Website — Policastro Soluções em Design",
+      "case-kashi": "Kashi · Visual identity — Policastro Soluções em Design"
     },
     "heroEyebrow": "UX & Product Design · Porto Alegre, BR",
     "heroTitle": "Policastro Soluções em Design",

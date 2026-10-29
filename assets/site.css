@@ -475,3 +475,11 @@ html[lang="en"] [data-lang="pt"], html:not([lang="en"]) [data-lang="en"] { displ
 @media (min-width: 1024px) {
   .case-steps { grid-template-columns: repeat(4, minmax(0, 1fr)); }
 }
+
+/* ---------- Case: pranchas em sequência (ex.: Kashi) ---------- */
+.case-boards { margin-top: 32px; display: grid; gap: 40px; }
+.case-board { margin: 0; }
+.case-board img { width: 100%; height: auto; border-radius: 1.25rem; background: var(--secondary); }
+.case-board figcaption { margin-top: 12px; display: flex; gap: 12px; align-items: baseline; font-size: 14px; font-weight: 500; }
+.case-board figcaption span { font-variant-numeric: tabular-nums; color: var(--muted-foreground); }
+.swatches--7 { grid-template-columns: repeat(auto-fill, minmax(96px, 1fr)); }

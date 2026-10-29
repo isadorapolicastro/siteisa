@@ -38,6 +38,21 @@ window.PROJETOS = [
     cor: "#0E3556"
   },
   {
+    titulo: { pt: "Kashi", en: "Kashi" },
+    categoria: { pt: "Identidade visual · Uso de marca", en: "Visual identity · Brand guidelines" },
+    descricao: {
+      pt: "Identidade visual e manual de uso de marca para um espaço de Ayurveda e Yogaterapia, do Instagram à fachada.",
+      en: "Visual identity and brand guidelines for an Ayurveda and Yoga therapy space, from Instagram to the storefront."
+    },
+    empresa: "Kashi",
+    ano: "2026",
+    metricas: null,
+    capa: "kashi-capa.webp", largura: 1600, altura: 900, foco: "left center",
+    imagens: null,
+    link: "kashi/",
+    cor: "#1E5556"
+  },
+  {
     titulo: { pt: "App Telemedicina", en: "Telemedicine App" },
     categoria: { pt: "Processo de descoberta", en: "Discovery process" },
     descricao: null,
