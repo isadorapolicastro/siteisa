@@ -53,6 +53,20 @@ window.PROJETOS = [
     cor: "#1E5556"
   },
   {
+    titulo: { pt: "Hafidme · Plataforma CRM", en: "Hafidme · CRM platform" },
+    categoria: { pt: "Product Design · Web Design", en: "Product Design · Web Design" },
+    descricao: { pt: "Dois projetos para a mesma plataforma de CRM: uma camada de gamificação dentro do produto e o site institucional.", en: "Two projects for the same CRM platform: a gamification layer inside the product and the corporate website." },
+    empresa: "Hafidme",
+    formato: { pt: "Cliente", en: "Client" },
+    ano: null,
+    metricas: null,
+    capa: "gamificacao-crm.webp", largura: 900, altura: 1035, foco: "center 35%",
+    imagens: ["site-crm.webp"],
+    link: "https://www.behance.net/isapolicastro",
+    botao: { pt: "Ver no Behance", en: "View on Behance" },
+    cor: "oklch(0.62 0.22 295)"
+  },
+  {
     titulo: { pt: "Site Pagme", en: "Pagme website" },
     categoria: { pt: "Web Design · Conceito", en: "Web Design · Concept" },
     descricao: { pt: "Conceito de site para a Pagme, infraestrutura financeira BaaS e white label, com simulador de receita e formulário de contato.", en: "A website concept for Pagme, a BaaS and white-label financial infrastructure, with a revenue simulator and contact form." },
@@ -123,20 +137,6 @@ window.PROJETOS = [
     cor: "oklch(0.22 0.08 270)"
   },
   {
-    titulo: { pt: "Gamificação em Plataforma CRM", en: "CRM Platform Gamification" },
-    categoria: { pt: "Product Design", en: "Product Design" },
-    descricao: { pt: "Product design de uma camada de gamificação para uma plataforma de CRM.", en: "Product design for a gamification layer in a CRM platform." },
-    empresa: null,
-    formato: { pt: "Publicado no Behance", en: "Published on Behance" },
-    ano: null,
-    metricas: null,
-    capa: "gamificacao-crm.webp", largura: 900, altura: 1035, foco: "center 35%",
-    imagens: null,
-    link: "https://www.behance.net/isapolicastro",
-    botao: { pt: "Ver no Behance", en: "View on Behance" },
-    cor: "oklch(0.62 0.22 295)"
-  },
-  {
     titulo: { pt: "Aplicativo para e-commerce", en: "E-commerce Mobile App" },
     categoria: { pt: "Mobile Design · Design Thinking", en: "Mobile Design · Design Thinking" },
     descricao: { pt: "Aplicativo de e-commerce criado a partir de um workshop de Design Thinking.", en: "An e-commerce app created from a Design Thinking workshop." },
@@ -149,19 +149,5 @@ window.PROJETOS = [
     link: "https://www.behance.net/gallery/161188855/UX-Design-Design-Thinking-Workshop-E-commerce-App",
     botao: { pt: "Ver no Behance", en: "View on Behance" },
     cor: "oklch(0.72 0.17 35)"
-  },
-  {
-    titulo: { pt: "Site para Plataforma CRM", en: "CRM Platform Website" },
-    categoria: { pt: "Web Design", en: "Web Design" },
-    descricao: { pt: "Site institucional para uma plataforma de CRM.", en: "A corporate website for a CRM platform." },
-    empresa: null,
-    formato: { pt: "Publicado no Behance", en: "Published on Behance" },
-    ano: null,
-    metricas: null,
-    capa: "site-crm.webp", largura: 900, altura: 870, foco: "center 55%",
-    imagens: null,
-    link: "https://www.behance.net/isapolicastro",
-    botao: { pt: "Ver no Behance", en: "View on Behance" },
-    cor: "oklch(0.78 0.14 85)"
   }
 ];
