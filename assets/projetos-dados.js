@@ -53,9 +53,9 @@ window.PROJETOS = [
     cor: "#1E5556"
   },
   {
-    titulo: { pt: "Hafidme · Plataforma CRM", en: "Hafidme · CRM platform" },
-    categoria: { pt: "Product Design · Web Design", en: "Product Design · Web Design" },
-    descricao: { pt: "Dois projetos para a mesma plataforma de CRM: uma camada de gamificação dentro do produto e o site institucional.", en: "Two projects for the same CRM platform: a gamification layer inside the product and the corporate website." },
+    titulo: { pt: "Plataforma e Website para Gestão Comercial", en: "Platform and Website for Sales Management" },
+    categoria: { pt: "CRM · Product Design · Web Design", en: "CRM · Product Design · Web Design" },
+    descricao: { pt: "Com uma abordagem que privilegia a simplicidade sem abrir mão da elegância, desenvolvi um layout limpo, onde as informações são estrategicamente organizadas e a hierarquia visual é clara. Essa composição resultou em uma página que incentiva ações e esclarece dúvidas, proporcionando ao usuário uma experiência imersiva para convertê-lo em cliente.", en: "With an approach that favors simplicity without giving up elegance, I designed a clean layout where information is strategically organized and the visual hierarchy is clear. The result is a page that encourages action and answers questions, giving users an immersive experience that turns them into customers." },
     empresa: "Hafidme",
     formato: { pt: "Cliente", en: "Client" },
     ano: null,
