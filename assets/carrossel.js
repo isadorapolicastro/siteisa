@@ -84,7 +84,7 @@
       var titulo = txt(p.titulo);
       var ext = externo(p.link);
       var alvo = ext ? ' target="_blank" rel="noopener"' : "";
-      var meta = [p.empresa, p.ano].filter(Boolean).map(esc).join('<span aria-hidden="true"> · </span>');
+      var meta = [p.empresa, txt(p.formato), p.ano].filter(Boolean).map(esc).join('<span aria-hidden="true"> · </span>');
       var metricas = (p.metricas || []).map(function (m) { return "<li>" + esc(txt(m)) + "</li>"; }).join("");
       var desc = txt(p.descricao);
       return (
@@ -104,7 +104,7 @@
         '    <div class="carr__foot">' +
         (meta ? '      <p class="carr__meta">' + meta + '</p>' : '<span></span>') +
         '      <a class="carr__cta" href="' + esc(p.link) + '"' + alvo + ' draggable="false">' +
-        '        <span>' + t.abrir + '</span>' + (ext ? '<span class="sr-only"> ' + t.novaAba + '</span>' : "") +
+        '        <span>' + esc(txt(p.botao) || t.abrir) + '</span>' + (ext ? '<span class="sr-only"> ' + t.novaAba + '</span>' : "") +
         '        <svg viewBox="0 0 20 20" width="18" height="18" aria-hidden="true"><path d="M6 14 14 6M7.5 6H14v6.5" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg>' +
         '      </a>' +
         '    </div>' +
