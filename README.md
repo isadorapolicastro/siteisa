@@ -101,7 +101,6 @@ O comportamento fica em `assets/carrossel.js` e o visual em `assets/carrossel.cs
 **Isadora Policastro** — Porto Alegre, RS
 📧 isapolicastro.designer@gmail.com
 [LinkedIn](https://www.linkedin.com/in/isadorapolicastro/) ·
-[Behance](https://www.behance.net/isapolicastro) ·
 [Instagram](https://www.instagram.com/isadora.policastro/)
 
 ---

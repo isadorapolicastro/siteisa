@@ -223,3 +223,7 @@
 /* Espaço entre o carrossel e "Estudos e conceitos" */
 .carr-after { margin-top: 112px; }
 .carr-after .concepts { margin-top: 0; }
+
+/* Projeto sem link: imagem sem efeito de clique */
+.carr__slide.is-active .carr__media--estatica:hover img { transform: none; }
+.carr__slide.is-active .carr__media--estatica { cursor: inherit; }

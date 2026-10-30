@@ -82,17 +82,19 @@
 
     track.innerHTML = projetos.map(function (p, i) {
       var titulo = txt(p.titulo);
-      var ext = externo(p.link);
+      var ext = p.link ? externo(p.link) : false;
       var alvo = ext ? ' target="_blank" rel="noopener"' : "";
       var meta = [p.empresa, txt(p.formato), p.ano].filter(Boolean).map(esc).join('<span aria-hidden="true"> · </span>');
       var metricas = (p.metricas || []).map(function (m) { return "<li>" + esc(txt(m)) + "</li>"; }).join("");
       var desc = txt(p.descricao);
       return (
         '<li class="carr__slide" role="group" aria-roledescription="slide" aria-label="' + esc(fmt(t.slide, { n: i + 1, t: total })) + '" data-i="' + i + '">' +
-        '  <a class="carr__media" href="' + esc(p.link) + '"' + alvo + ' style="background-color:' + esc(p.cor || "var(--secondary)") + '" tabindex="-1" aria-hidden="true" draggable="false">' +
+        (p.link
+          ? '  <a class="carr__media" href="' + esc(p.link) + '"' + alvo + ' style="background-color:' + esc(p.cor || "var(--secondary)") + '" tabindex="-1" aria-hidden="true" draggable="false">'
+          : '  <div class="carr__media carr__media--estatica" style="background-color:' + esc(p.cor || "var(--secondary)") + '" aria-hidden="true">') +
         '    <img src="' + base + 'assets/projetos/' + esc(p.capa) + '" width="' + p.largura + '" height="' + p.altura + '" alt="" draggable="false"' +
         '      style="object-position:' + esc(p.foco || "center") + '"' + (i < 2 ? "" : ' loading="lazy"') + ' decoding="async" />' +
-        '  </a>' +
+        (p.link ? '  </a>' : '  </div>') +
         '  <div class="carr__info">' +
         '    <div class="carr__head">' +
         '      <span class="carr__num" aria-hidden="true">' + dois(i + 1) + '</span>' +
@@ -103,10 +105,12 @@
         (metricas ? '    <ul class="carr__metrics">' + metricas + '</ul>' : "") +
         '    <div class="carr__foot">' +
         (meta ? '      <p class="carr__meta">' + meta + '</p>' : '<span></span>') +
+        (p.link ? (
         '      <a class="carr__cta" href="' + esc(p.link) + '"' + alvo + ' draggable="false">' +
         '        <span>' + esc(txt(p.botao) || t.abrir) + '</span>' + (ext ? '<span class="sr-only"> ' + t.novaAba + '</span>' : "") +
         '        <svg viewBox="0 0 20 20" width="18" height="18" aria-hidden="true"><path d="M6 14 14 6M7.5 6H14v6.5" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg>' +
-        '      </a>' +
+        '      </a>'
+        ) : '') +
         '    </div>' +
         '  </div>' +
         '</li>'

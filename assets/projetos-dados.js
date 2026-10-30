@@ -17,7 +17,7 @@
    - largura/altura  tamanho real da imagem de capa, em pixels
    - foco          que parte da imagem priorizar no recorte: "center", "top", "left top"...
    - imagens       imagens adicionais (opcional, reservado para a página do case)
-   - link          endereço do case completo
+   - link          endereço do case completo (opcional; sem link o card não tem botão)
    - botao         { pt, en }  texto do botão (opcional; padrão: "Ver projeto")
    - cor           cor de fundo atrás da imagem enquanto carrega
 
@@ -125,15 +125,15 @@ window.PROJETOS = [
   {
     titulo: { pt: "App Telemedicina", en: "Telemedicine App" },
     categoria: { pt: "Processo de descoberta", en: "Discovery process" },
-    descricao: { pt: "Processo de descoberta de um aplicativo de telemedicina, documentado etapa por etapa no Behance.", en: "The discovery process for a telemedicine app, documented step by step on Behance." },
+    descricao: { pt: "Processo de descoberta de um aplicativo de telemedicina, da pesquisa à definição do produto.", en: "The discovery process for a telemedicine app, from research to product definition." },
     empresa: null,
-    formato: { pt: "Publicado no Behance", en: "Published on Behance" },
+    formato: { pt: "Estudo de UX", en: "UX study" },
     ano: null,
     metricas: null,
     capa: "telemedicina.webp", largura: 900, altura: 1035, foco: "center 40%",
     imagens: null,
-    link: "https://www.behance.net/gallery/160826227/TeleMedicine-App",
-    botao: { pt: "Ver no Behance", en: "View on Behance" },
+    link: null,
+    botao: null,
     cor: "oklch(0.22 0.08 270)"
   },
   {
@@ -141,13 +141,13 @@ window.PROJETOS = [
     categoria: { pt: "Mobile Design · Design Thinking", en: "Mobile Design · Design Thinking" },
     descricao: { pt: "Aplicativo de e-commerce criado a partir de um workshop de Design Thinking.", en: "An e-commerce app created from a Design Thinking workshop." },
     empresa: null,
-    formato: { pt: "Publicado no Behance", en: "Published on Behance" },
+    formato: { pt: "Estudo de UX", en: "UX study" },
     ano: null,
     metricas: null,
     capa: "app-ecommerce.webp", largura: 900, altura: 870, foco: "center 45%",
     imagens: null,
-    link: "https://www.behance.net/gallery/161188855/UX-Design-Design-Thinking-Workshop-E-commerce-App",
-    botao: { pt: "Ver no Behance", en: "View on Behance" },
+    link: null,
+    botao: null,
     cor: "oklch(0.72 0.17 35)"
   }
 ];
