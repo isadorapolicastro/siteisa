@@ -39,20 +39,6 @@ window.PROJETOS = [
     cor: "#E2001A"
   },
   {
-    titulo: { pt: "Santander +fácil", en: "Santander +fácil" },
-    categoria: { pt: "Mercado financeiro · Gamificação", en: "Financial services · Gamification" },
-    descricao: { pt: "Plataforma de incentivo para colaboradores, focada na venda de seguros, com metas, treinamentos e quiz.", en: "An employee incentive platform focused on selling insurance, with goals, trainings and quizzes." },
-    empresa: "Santander",
-    formato: { pt: "Cliente via Digi", en: "Client via Digi" },
-    ano: null,
-    metricas: null,
-    capa: "santander-capa.webp", largura: 1600, altura: 901, foco: "center",
-    imagens: null,
-    link: "santander/",
-    botao: { pt: "Ver case", en: "View case" },
-    cor: "#CC0000"
-  },
-  {
     titulo: { pt: "Casas Bahia · Black Friday e Blog", en: "Casas Bahia · Black Friday and Blog" },
     categoria: { pt: "E-commerce · UX", en: "E-commerce · UX" },
     descricao: { pt: "Página de Black Friday e blog no site e no app, para aumentar tráfego, conversão e venda de produtos core.", en: "Black Friday page and blog on website and app, to increase traffic, conversion and core product sales." },

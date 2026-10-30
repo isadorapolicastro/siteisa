@@ -52,7 +52,6 @@
       "case-hafidme": "Hafidme · Product Design — Policastro Soluções em Design",
       "case-renner": "Lojas Renner · Novo menu — Policastro Soluções em Design",
       "case-casas-bahia": "Casas Bahia · Black Friday e Blog — Policastro Soluções em Design",
-      "case-santander": "Santander +fácil · Plataforma de incentivo — Policastro Soluções em Design",
       "case-instor": "Instor · Design system e App Jaci — Policastro Soluções em Design",
       "case-omie-ai": "Omie.AI · Assistente contábil inteligente — Policastro Soluções em Design"
     },
@@ -325,7 +324,6 @@
       "case-hafidme": "Hafidme · Product Design — Policastro Soluções em Design",
       "case-renner": "Lojas Renner · New menu — Policastro Soluções em Design",
       "case-casas-bahia": "Casas Bahia · Black Friday and Blog — Policastro Soluções em Design",
-      "case-santander": "Santander +fácil · Incentive platform — Policastro Soluções em Design",
       "case-instor": "Instor · Design system and Jaci app — Policastro Soluções em Design",
       "case-omie-ai": "Omie.AI · Smart accounting assistant — Policastro Soluções em Design"
     },

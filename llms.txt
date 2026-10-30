@@ -14,7 +14,6 @@ A Policastro Soluções em Design nasceu de 10 anos de experiência em design di
 - [Case Hafidme](https://isadorapolicastrouxdesign.com/projetos/hafidme/): Gamificação e site institucional de uma plataforma de CRM para representantes comerciais.
 - [Case Lojas Renner](https://isadorapolicastrouxdesign.com/projetos/renner/): Novo menu do e-commerce no site e no app, validado com testes de usabilidade em loja.
 - [Case Casas Bahia](https://isadorapolicastrouxdesign.com/projetos/casas-bahia/): Página de Black Friday e blog no site e no app.
-- [Case Santander +fácil](https://isadorapolicastrouxdesign.com/projetos/santander/): Plataforma de incentivo para colaboradores, focada na venda de seguros.
 - [Case Instor](https://isadorapolicastrouxdesign.com/projetos/instor/): Design system para plataformas de inspeção industrial e o App Jaci.
 - [Case Omie.AI](https://isadorapolicastrouxdesign.com/projetos/omie-ai/): Proposta de assistente contábil com IA para o ERP Omie.
 - [Trabalhe Conosco](https://isadorapolicastrouxdesign.com/trabalhe-conosco/): Vagas e oportunidades.
