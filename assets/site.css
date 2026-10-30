@@ -483,3 +483,20 @@ html[lang="en"] [data-lang="pt"], html:not([lang="en"]) [data-lang="en"] { displ
 .case-board figcaption { margin-top: 12px; display: flex; gap: 12px; align-items: baseline; font-size: 14px; font-weight: 500; }
 .case-board figcaption span { font-variant-numeric: tabular-nums; color: var(--muted-foreground); }
 .swatches--7 { grid-template-columns: repeat(auto-fill, minmax(96px, 1fr)); }
+
+/* ---------- Case: telas de produto (ex.: Hafidme) ---------- */
+.case-shots { margin-top: 40px; display: grid; gap: 24px; }
+.case-shot { margin: 0; }
+.case-shot__frame { display: grid; place-items: center; padding: 24px; border-radius: 1.25rem; background: var(--secondary); aspect-ratio: 4 / 5; }
+.case-shot__frame img { max-width: 100%; max-height: 100%; width: auto; height: auto; object-fit: contain; }
+.case-shot figcaption { margin-top: 12px; display: flex; gap: 12px; align-items: baseline; font-size: 14px; font-weight: 500; }
+.case-shot figcaption span { font-variant-numeric: tabular-nums; color: var(--muted-foreground); }
+.case-shot--site { margin-top: 40px; }
+.case-shot--site .case-shot__frame { aspect-ratio: auto; padding: 0; overflow: hidden; }
+.case-shot--site .case-shot__frame img { width: 100%; }
+.case-testimonial { margin: 48px 0 0; padding: 32px; border-radius: 1.25rem; border: 1px solid var(--border); }
+.case-testimonial blockquote { font-size: 20px; line-height: 1.55; font-weight: 500; letter-spacing: -0.02em; }
+.case-testimonial figcaption { margin-top: 24px; display: flex; gap: 14px; align-items: center; font-size: 14px; color: var(--muted-foreground); }
+.case-testimonial figcaption strong { color: var(--foreground); }
+.case-testimonial figcaption img { width: 48px; height: 48px; border-radius: 999px; object-fit: contain; background: #fff; border: 1px solid var(--border); padding: 5px; }
+@media (min-width: 768px) { .case-shots { grid-template-columns: repeat(2, minmax(0, 1fr)); } }

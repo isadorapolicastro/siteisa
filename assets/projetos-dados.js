@@ -60,11 +60,11 @@ window.PROJETOS = [
     formato: { pt: "Cliente", en: "Client" },
     ano: null,
     metricas: null,
-    capa: "gamificacao-crm.webp", largura: 900, altura: 1035, foco: "center 35%",
-    imagens: ["site-crm.webp"],
-    link: "https://www.behance.net/isapolicastro",
-    botao: { pt: "Ver no Behance", en: "View on Behance" },
-    cor: "oklch(0.62 0.22 295)"
+    capa: "hafidme-capa.webp", largura: 1200, altura: 675, foco: "center",
+    imagens: null,
+    link: "hafidme/",
+    botao: { pt: "Ver case", en: "View case" },
+    cor: "#F1EEE9"
   },
   {
     titulo: { pt: "Site Pagme", en: "Pagme website" },
