@@ -509,3 +509,65 @@ html[lang="en"] [data-lang="pt"], html:not([lang="en"]) [data-lang="en"] { displ
 .logos__item img { width: min(var(--w), 100%); height: auto; object-fit: contain; }
 @media (max-width: 420px) { .logos__item img { width: min(calc(var(--w) * .82), 100%); } }
 @media (min-width: 768px) { .logos__grid { row-gap: 16px; } .logos__item { flex-basis: 25%; min-height: 120px; } }
+
+/* ---------- Ilustrações animadas ---------- */
+.il-defs { position: absolute; width: 0; height: 0; overflow: hidden; }
+.art { display: block; width: 100%; height: auto; overflow: visible; }
+.art * { animation-play-state: paused; }
+.art.on * { animation-play-state: running; }
+.art .fl { animation: il-float 6s ease-in-out infinite; animation-delay: var(--fd, 0s); }
+.art .tw, .art .tap, .art .bar, .art .peca { transform-box: fill-box; }
+.art .tw { transform-origin: center; animation: il-tw 3.2s ease-in-out infinite; animation-delay: var(--fd, 0s); }
+.art .bar { transform-origin: bottom; animation: il-bar 5s cubic-bezier(.3, .9, .3, 1) infinite; animation-delay: var(--bd, 0s); }
+.art .tap { transform-origin: top left; animation: il-tap 3.4s ease-in-out infinite; }
+.art .lupa { animation: il-lupa 8s ease-in-out infinite; }
+.art .peca { transform-origin: center; animation: il-peca 6.5s cubic-bezier(.3, 1.4, .5, 1) infinite; animation-delay: calc(var(--i) * .12s); }
+.art .draw { stroke-dasharray: 220; animation: il-draw 5s ease-in-out infinite; }
+.art .draw--ring { stroke-dasharray: 151; animation-name: il-ring; }
+.art .draw-head { animation: il-head 5s ease-in-out infinite; }
+@keyframes il-float { 0%, 100% { transform: translateY(0); } 50% { transform: translateY(-9px); } }
+@keyframes il-tw { 0%, 100% { transform: scale(.7) rotate(0); opacity: .55; } 50% { transform: scale(1.1) rotate(25deg); opacity: 1; } }
+@keyframes il-bar { 0% { transform: scaleY(.15); } 35%, 85% { transform: scaleY(1); } 100% { transform: scaleY(.15); } }
+@keyframes il-tap { 0%, 100% { transform: translate(0, 0); } 40% { transform: translate(-16px, -12px); } 48% { transform: translate(-16px, -12px) scale(.86); } 56% { transform: translate(-16px, -12px); } }
+@keyframes il-lupa { 0%, 100% { transform: translate(0, 0); } 33% { transform: translate(-80px, -34px); } 66% { transform: translate(-40px, -70px); } }
+@keyframes il-peca { 0% { opacity: 0; transform: translate(var(--dx), var(--dy)) rotate(var(--r)) scale(.5); } 22%, 84% { opacity: 1; transform: none; } 100% { opacity: 0; transform: scale(.92); } }
+@keyframes il-draw { 0% { stroke-dashoffset: 220; } 40%, 85% { stroke-dashoffset: 0; } 100% { stroke-dashoffset: 220; } }
+@keyframes il-ring { 0% { stroke-dashoffset: 151; } 40%, 85% { stroke-dashoffset: 55; } 100% { stroke-dashoffset: 151; } }
+@keyframes il-head { 0%, 30% { opacity: 0; } 40%, 85% { opacity: 1; } 100% { opacity: 0; } }
+
+/* Entradas ao aparecer na tela (só quando o JavaScript está ativo) */
+.anim [data-anim] { transition: opacity .9s ease, transform 1.1s cubic-bezier(.2, .8, .2, 1); transition-delay: var(--ad, 0s); }
+.anim [data-anim]:not(.is-in) { opacity: 0; }
+.anim [data-anim="float"]:not(.is-in) { transform: translateY(48px); }
+.anim [data-anim="tilt"]:not(.is-in) { transform: translateY(28px) rotate(-7deg); }
+.anim [data-anim="grow"]:not(.is-in) { transform: scale(.86); }
+
+/* Hero: ilustrações ao redor da foto */
+.hero__photo { z-index: 1; }
+.hero__art { position: absolute; z-index: 0; pointer-events: none; }
+.hero__art--l { width: 190px; left: calc(50% - 128px - 150px); top: -24px; }
+.hero__art--r { width: 180px; left: calc(50% + 128px - 40px); top: 70px; }
+@media (min-width: 768px) {
+  .hero__art--l { width: 270px; left: calc(50% - 160px - 250px); top: -30px; }
+  .hero__art--r { width: 250px; left: calc(50% + 160px - 10px); top: 30px; }
+}
+
+/* Seção "Como eu trabalho" */
+.flow { padding: 88px 0 96px; }
+.flow__title { margin-top: 12px; font-size: clamp(28px, 4vw, 44px); font-weight: 500; letter-spacing: -0.025em; }
+.flow__grid { margin-top: 44px; padding: 0; list-style: none; display: grid; gap: 20px; }
+.flow__card { border-radius: 1.75rem; background: #fff; border: 1px solid var(--border); padding: 16px 16px 28px; }
+.flow__art { border-radius: 1.25rem; background: linear-gradient(160deg, #F3EEFF, #FBF6E9); padding: 14px 10px; margin-bottom: 22px; }
+.flow__num { display: block; padding: 0 8px; font-family: var(--mono); font-size: 12px; letter-spacing: .05em; color: var(--muted-foreground); }
+.flow__card h3 { margin-top: 8px; padding: 0 8px; font-size: 22px; font-weight: 500; letter-spacing: -0.02em; }
+.flow__card p { margin-top: 8px; padding: 0 8px; line-height: 1.6; color: var(--muted-foreground); }
+.flow__cta { margin-top: 32px; }
+@media (min-width: 900px) { .flow__grid { grid-template-columns: repeat(3, minmax(0, 1fr)); } }
+
+@media (prefers-reduced-motion: reduce) {
+  .art * { animation: none !important; }
+  .art .peca, .art .draw-head { opacity: 1; }
+  .art .draw { stroke-dashoffset: 0; }
+  .art .draw--ring { stroke-dashoffset: 55; }
+  .anim [data-anim] { transition: none !important; opacity: 1 !important; transform: none !important; }
+}

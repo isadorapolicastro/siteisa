@@ -63,6 +63,9 @@
     "scrollHint": "✦ Explore o site e conheça nosso trabalho ✦",
     "home": {
       "aboutEyebrow": "Sobre",
+      "flowEyebrow": "Processo",
+      "flowTitle": "Como eu trabalho",
+      "flowCta": "Ver o processo completo",
       "aboutTitle": "Quem é Isadora Policastro",
       "aboutBio": [
         "Sou product designer com mais de 10 anos de experiência criando interfaces digitais — 3 deles em cargos de liderança. Já levei produtos do zero ao lançamento e atuei em todas as etapas, do conceito em baixa fidelidade até interfaces prontas para produção.",
@@ -335,6 +338,9 @@
     "scrollHint": "✦ Explore the site and see our work ✦",
     "home": {
       "aboutEyebrow": "About",
+      "flowEyebrow": "Process",
+      "flowTitle": "How I work",
+      "flowCta": "See the full process",
       "aboutTitle": "Who is Isadora Policastro",
       "aboutBio": [
         "A product designer with 10+ years of experience crafting digital interfaces — 3 of them in leadership roles. I've taken products from zero to one and worked across every stage, from low-fidelity concept to production-ready interfaces.",
