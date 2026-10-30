@@ -53,6 +53,21 @@ window.PROJETOS = [
     cor: "#1E5556"
   },
   {
+    titulo: { pt: "Site Pagme", en: "Pagme website" },
+    categoria: { pt: "Web Design · Conceito", en: "Web Design · Concept" },
+    descricao: {
+      pt: "Conceito de site para a Pagme, infraestrutura financeira BaaS e white label, com simulador de receita e formulário de contato.",
+      en: "A website concept for Pagme, a BaaS and white-label financial infrastructure, with a revenue simulator and contact form."
+    },
+    empresa: "Pagme",
+    ano: "2026",
+    metricas: null,
+    capa: "pagme-capa.webp", largura: 1600, altura: 900, foco: "left top",
+    imagens: null,
+    link: "pagme/",
+    cor: "#2A1F5C"
+  },
+  {
     titulo: { pt: "App Telemedicina", en: "Telemedicine App" },
     categoria: { pt: "Processo de descoberta", en: "Discovery process" },
     descricao: null,
