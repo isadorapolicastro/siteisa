@@ -28,6 +28,8 @@
       { "subtitle": "Aplicativo · Conceito" },
       { "subtitle": "Site · Conceito" }
     ],
+    "logosEyebrow": "Experiência",
+    "logosTitle": "Empresas e marcas com quem já trabalhei",
     "marqueeLabel": "Serviços",
     "marqueeText": "Serviços: UX & Product Design, sites, identidade visual, aplicativos, pesquisa com usuários e testes de usabilidade.",
     "marquee": ["UX & Product Design", "Sites", "Identidade visual", "Aplicativos", "Pesquisa com usuários", "Testes de usabilidade"],
@@ -299,6 +301,8 @@
       { "subtitle": "App · Concept" },
       { "subtitle": "Website · Concept" }
     ],
+    "logosEyebrow": "Experience",
+    "logosTitle": "Companies and brands I have worked with",
     "marqueeLabel": "Services",
     "marqueeText": "Services: UX & Product Design, websites, visual identity, apps, user research and usability testing.",
     "marquee": ["UX & Product Design", "Websites", "Visual identity", "Apps", "User research", "Usability testing"],
