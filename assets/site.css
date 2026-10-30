@@ -571,3 +571,25 @@ html[lang="en"] [data-lang="pt"], html:not([lang="en"]) [data-lang="en"] { displ
   .art .draw--ring { stroke-dashoffset: 55; }
   .anim [data-anim] { transition: none !important; opacity: 1 !important; transform: none !important; }
 }
+
+/* ---------- Case: marca Policastro ---------- */
+.pol-concept { margin-top: 40px; padding: 0; list-style: none; display: grid; gap: 16px; grid-template-columns: repeat(3, minmax(0, 1fr)); }
+.pol-concept__art { display: grid; place-items: center; aspect-ratio: 1; border-radius: 1.25rem; background: #F3EEFF; padding: 22%; }
+.pol-concept__art svg { width: 100%; height: auto; overflow: visible; }
+.pol-concept .on { fill: #3A1872; }
+.pol-concept .off { fill: #3A1872; opacity: .12; }
+.pol-concept .on2 { fill: #945FF9; }
+.pol-concept p { margin-top: 10px; font-size: 14px; color: var(--muted-foreground); }
+.pol-concept strong { color: var(--foreground); margin-right: 4px; }
+@media (max-width: 560px) { .pol-concept { gap: 10px; } .pol-concept p { font-size: 12px; } }
+.pol-demo { margin-top: 32px; border-radius: 1.5rem; background: #F9F5EC; border: 1px solid var(--border); padding: 56px 24px 32px; display: flex; flex-direction: column; align-items: center; gap: 32px; }
+.pol-demo__sym { width: min(200px, 50vw); height: auto; overflow: visible; cursor: pointer; }
+.pol-demo__sym .pc { fill: #3A1872; transition: transform .45s cubic-bezier(.3, 1.6, .5, 1); }
+.pol-demo__sym.play .pc { animation: brand-in 1s cubic-bezier(.2, .9, .25, 1.25) both; animation-delay: calc(var(--i) * .11s); }
+.pol-demo__sym:hover .pc { transform: translate(calc(var(--sx) * 2.4), calc(var(--sy) * 2.4)); }
+.pol-posts { margin-top: 24px; padding: 0; list-style: none; display: grid; gap: 12px; grid-template-columns: repeat(2, minmax(0, 1fr)); }
+.pol-posts img { width: 100%; height: auto; border-radius: .75rem; }
+@media (min-width: 768px) { .pol-posts { grid-template-columns: repeat(4, minmax(0, 1fr)); } }
+.pol-insta { max-width: 520px; margin-inline: auto; }
+.pol-insta__link { margin-top: 24px; }
+@media (prefers-reduced-motion: reduce) { .pol-demo__sym.play .pc { animation: none; } .pol-demo__sym .pc { transition: none; } }

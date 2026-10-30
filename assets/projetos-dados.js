@@ -107,5 +107,19 @@ window.PROJETOS = [
     link: "https://fourbank.isapolicastro-designer.workers.dev/",
     botao: { pt: "Ver site", en: "View website" },
     cor: "#0E3556"
+  },
+  {
+    titulo: { pt: "Policastro · Marca própria", en: "Policastro · Own brand" },
+    categoria: { pt: "Identidade visual · Uso de marca", en: "Visual identity · Brand guidelines" },
+    descricao: { pt: "A marca do meu estúdio: as iniciais I e P desenhadas como peças que florescem, com logo animado e aplicações no site e no Instagram.", en: "My studio’s brand: the initials I and P drawn as pieces that bloom, with an animated logo and applications on the website and Instagram." },
+    empresa: "Policastro Soluções em Design",
+    formato: { pt: "Marca própria", en: "Own brand" },
+    ano: null,
+    metricas: null,
+    capa: "policastro-capa.webp", largura: 1600, altura: 900, foco: "center",
+    imagens: null,
+    link: "policastro/",
+    botao: { pt: "Ver case", en: "View case" },
+    cor: "#F9F5EC"
   }
 ];
