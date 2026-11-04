@@ -227,3 +227,30 @@
 /* Projeto sem link: imagem sem efeito de clique */
 .carr__slide.is-active .carr__media--estatica:hover img { transform: none; }
 .carr__slide.is-active .carr__media--estatica { cursor: inherit; }
+
+/* ---------- Painel "Sobre o projeto" abaixo do carrossel ---------- */
+.carr-det { margin-top: 56px; }
+.carr-det__card { border-radius: 1.75rem; background: #fff; border: 1px solid var(--border); padding: clamp(24px, 4vw, 48px); }
+.carr-det__card.is-in { animation: carr-det-in .5s var(--carr-ease) both; }
+@keyframes carr-det-in { from { opacity: 0; transform: translateY(10px); } }
+.carr-det__titulo { margin-top: 10px; font-size: clamp(24px, 3vw, 34px); line-height: 1.1; font-weight: 500; letter-spacing: -0.02em; }
+.carr-det__empresa { margin-top: 6px; color: var(--muted-foreground); font-size: 15px; }
+.carr-det__grade { margin-top: 28px; display: grid; gap: 28px; }
+.carr-det__ficha { margin: 0; display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 16px 20px; align-content: start; padding: 20px 0; border-block: 1px solid var(--border); }
+.carr-det__ficha dt { font-size: 11px; font-weight: 600; letter-spacing: .12em; text-transform: uppercase; color: var(--muted-foreground); }
+.carr-det__ficha dd { margin: 4px 0 0; font-size: 15px; line-height: 1.4; }
+.carr-det__blocos { display: grid; gap: 32px; min-width: 0; }
+.carr-det__h { margin-top: 8px; font-size: 20px; line-height: 1.3; font-weight: 500; letter-spacing: -0.01em; }
+.carr-det__bloco p:not(.eyebrow) { margin-top: 10px; max-width: 62ch; line-height: 1.65; color: var(--muted-foreground); }
+.carr-det__bloco .chips { margin-top: 12px; }
+.carr-det__etapas { margin: 14px 0 0; padding: 0; list-style: none; display: grid; gap: 10px; counter-reset: etapa; }
+.carr-det__etapas li { counter-increment: etapa; display: grid; grid-template-columns: 32px 1fr; gap: 2px 12px; line-height: 1.55; }
+.carr-det__etapas li::before { content: counter(etapa, decimal-leading-zero); grid-row: span 2; font-family: var(--mono); font-size: 12px; color: var(--muted-foreground); padding-top: 3px; }
+.carr-det__etapas strong { font-weight: 600; }
+.carr-det__etapas span { color: var(--muted-foreground); }
+.carr-det__cta { margin-top: 32px; }
+@media (min-width: 900px) {
+  .carr-det__grade { grid-template-columns: minmax(0, 1fr) minmax(0, 2.2fr); gap: 56px; }
+  .carr-det__ficha { grid-template-columns: 1fr; position: sticky; top: calc(var(--nav-h) + 24px); align-self: start; }
+}
+@media (prefers-reduced-motion: reduce) { .carr-det__card.is-in { animation: none; } }

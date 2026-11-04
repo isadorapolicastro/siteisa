@@ -19,7 +19,11 @@
       irPara: "Ir para o projeto {n}: {titulo}",
       abrir: "Ver projeto",
       novaAba: "(abre em nova aba)",
-      anuncio: "Projeto {n} de {t}: {titulo}"
+      anuncio: "Projeto {n} de {t}: {titulo}",
+      sobre: "Sobre o projeto",
+      entregas: "Entregas",
+      verCase: "Ver o case completo, com imagens",
+      verSite: "Ver o site"
     },
     en: {
       regiao: "Featured projects",
@@ -29,7 +33,11 @@
       irPara: "Go to project {n}: {titulo}",
       abrir: "View project",
       novaAba: "(opens in a new tab)",
-      anuncio: "Project {n} of {t}: {titulo}"
+      anuncio: "Project {n} of {t}: {titulo}",
+      sobre: "About the project",
+      entregas: "Deliverables",
+      verCase: "See the full case, with images",
+      verSite: "View the website"
     }
   };
 
@@ -62,6 +70,7 @@
     '<div class="carr__viewport">' +
     '  <ul class="carr__track"></ul>' +
     '</div>' +
+    '<div class="carr-det container container--wide"><article class="carr-det__card"></article></div>' +
     '<p class="sr-only" aria-live="polite" aria-atomic="true"></p>';
 
   var viewport = root.querySelector(".carr__viewport");
@@ -71,6 +80,8 @@
   var live = root.querySelector("[aria-live]");
   var btnPrev = root.querySelector('[data-dir="-1"]');
   var btnNext = root.querySelector('[data-dir="1"]');
+  var detCard = root.querySelector(".carr-det__card");
+  var detAtual = -1;
   var slides = [];
   var dots = [];
 
@@ -140,6 +151,46 @@
     track.style.transform = "translate3d(" + x + "px,0,0)";
   }
 
+
+  /* ---------- Painel com todas as informações do projeto em destaque ---------- */
+  function bloco(b) {
+    if (!b) return "";
+    var corpo = (b.textos || []).map(function (t) { return "<p>" + esc(t) + "</p>"; }).join("");
+    if (b.etapas) {
+      corpo += '<ol class="carr-det__etapas">' + b.etapas.map(function (e) {
+        return "<li><strong>" + esc(e[0]) + "</strong><span>" + esc(e[1]) + "</span></li>";
+      }).join("") + "</ol>";
+    }
+    return '<section class="carr-det__bloco"><p class="eyebrow">' + esc(b.rotulo || "") + '</p><h4 class="carr-det__h">' + esc(b.titulo || "") + "</h4>" + corpo + "</section>";
+  }
+  function detalhe(forcar) {
+    if (!detCard) return;
+    if (!forcar && detAtual === atual) return;
+    detAtual = atual;
+    var p = projetos[atual];
+    var d = p.detalhe ? (p.detalhe[lang] || p.detalhe.pt) : null;
+    var t = TEXTOS[lang];
+    if (!d) { detCard.parentNode.hidden = true; return; }
+    detCard.parentNode.hidden = false;
+    var ext = p.link ? externo(p.link) : false;
+    var ficha = (d.ficha || []).map(function (f) { return "<div><dt>" + esc(f[0]) + "</dt><dd>" + esc(f[1]) + "</dd></div>"; }).join("");
+    var entregas = (d.entregas || []).map(function (c) { return '<li class="chip">' + esc(c) + "</li>"; }).join("");
+    var link = p.link ? '<a class="carr__cta carr-det__cta" href="' + esc(p.link) + '"' + (ext ? ' target="_blank" rel="noopener"' : "") + '><span>' + (ext ? t.verSite : t.verCase) + "</span>" + (ext ? '<span class="sr-only"> ' + t.novaAba + "</span>" : "") +
+      '<svg viewBox="0 0 20 20" width="18" height="18" aria-hidden="true"><path d="M6 14 14 6M7.5 6H14v6.5" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg></a>' : "";
+    detCard.classList.remove("is-in");
+    detCard.innerHTML =
+      '<header class="carr-det__topo"><p class="eyebrow">' + t.sobre + " · " + dois(atual + 1) + " / " + dois(total) + '</p><h3 class="carr-det__titulo">' + esc(txt(p.titulo)) + "</h3>" +
+      (p.empresa ? '<p class="carr-det__empresa">' + esc(p.empresa) + "</p>" : "") + "</header>" +
+      '<div class="carr-det__grade">' +
+      '  <dl class="carr-det__ficha">' + ficha + "</dl>" +
+      '  <div class="carr-det__blocos">' + bloco(d.desafio) + bloco(d.processo) +
+      '    <section class="carr-det__bloco"><p class="eyebrow">' + t.entregas + '</p><ul class="chips">' + entregas + "</ul></section>" +
+      "  </div>" +
+      "</div>" + link;
+    void detCard.offsetWidth;
+    detCard.classList.add("is-in");
+  }
+
   function ir(i, opt) {
     opt = opt || {};
     atual = Math.max(0, Math.min(total - 1, i));
@@ -172,6 +223,8 @@
     } else {
       mover(deslocamento, true);
     }
+
+    detalhe();
 
     if (!opt.semAnunciar) {
       live.textContent = fmt(t.anuncio, { n: atual + 1, t: total, titulo: txt(projetos[atual].titulo) });
@@ -262,6 +315,7 @@
   document.addEventListener("site:lang", function (e) {
     lang = e.detail && e.detail.lang === "en" ? "en" : "pt";
     montar();
+    detalhe(true);
   });
 
   if (reduzir) root.classList.add("carr--reduce");
