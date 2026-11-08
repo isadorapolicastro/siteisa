@@ -17,7 +17,7 @@
       "projetos": "Projetos",
       "trabalhe-conosco": "Trabalhe Conosco",
       "sobre": "Quem sou eu",
-      "studio": "Isadora&Guilherme",
+      "studio": "ISADORA POLICASTRO DE ASSIS\nGUILHERME POLICASTRO DE ASSIS",
       "contato": "Contato"
     },
     "navCta": "Vamos conversar",
@@ -294,7 +294,7 @@
       "projetos": "Projects",
       "trabalhe-conosco": "Careers",
       "sobre": "About me",
-      "studio": "Isadora&Guilherme",
+      "studio": "ISADORA POLICASTRO DE ASSIS\nGUILHERME POLICASTRO DE ASSIS",
       "contato": "Contact"
     },
     "navCta": "Let's talk",

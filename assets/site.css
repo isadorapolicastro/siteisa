@@ -124,10 +124,17 @@ button, input, select, textarea { font: inherit; color: inherit; }
 @media (max-width: 480px) {
   .nav__cta { display: none; }
 }
-@media (min-width: 1024px) {
+@media (min-width: 1280px) {
   .nav__links { display: flex; }
   .nav__toggle, .nav__panel, .nav[data-open="true"] .nav__panel { display: none; }
 }
+
+/* Aba do estúdio: os dois nomes completos, em duas linhas */
+[data-i18n="nav.studio"] { white-space: pre-line; font-size: 10.5px; line-height: 1.25; letter-spacing: .04em; }
+.nav__links a[data-i18n="nav.studio"] { display: block; }
+.nav__panel a[data-i18n="nav.studio"] { font-size: 13px; }
+.nav__links a { white-space: nowrap; }
+.nav__links a[data-i18n="nav.studio"] { white-space: pre; }
 
 /* ---------- Rodapé ---------- */
 .footer { border-top: 1px solid var(--border); padding: 40px 0; }
