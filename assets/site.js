@@ -17,6 +17,7 @@
       "projetos": "Projetos",
       "trabalhe-conosco": "Trabalhe Conosco",
       "sobre": "Quem sou eu",
+      "studio": "Policastro Studio",
       "contato": "Contato"
     },
     "navCta": "Vamos conversar",
@@ -293,6 +294,7 @@
       "projetos": "Projects",
       "trabalhe-conosco": "Careers",
       "sobre": "About me",
+      "studio": "Policastro Studio",
       "contato": "Contact"
     },
     "navCta": "Let's talk",
